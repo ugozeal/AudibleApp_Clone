@@ -28,6 +28,7 @@ class MainNavigationController: UINavigationController {
     
     @objc func showLogInController(){
         let logInController = LogInController()
+        logInController.modalPresentationStyle = .fullScreen
         present(logInController, animated: true, completion: {
             // Put something here
         })

@@ -20,6 +20,7 @@ class HomeController: UIViewController {
     @objc func handleSignOut(){
         UserDefaults.standard.setIsLoggedIn(value: false)
         let loginController = LogInController()
+        loginController.modalPresentationStyle = .fullScreen
         present(loginController, animated: true, completion: nil)
     }
     
